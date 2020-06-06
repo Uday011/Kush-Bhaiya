@@ -406,3 +406,46 @@ body a, .btn, button {
 .animate__animated{
   animation-duration: 2s;
 }
+
+.box1{
+  color: white;
+  position: relative;
+}
+.box1:hover , .box1:focus{ 
+  text-decoration: none;
+   color: #ffac00;
+  animation-name: box;
+  animation-duration: .6s;
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-play-state: initial;
+}
+@keyframes box{
+  0%{
+  top: 0;
+  left: 0;
+  }
+
+  100%{
+    top: 0;
+    left: 10px;
+  }
+
+}
+.link-h{
+  color: white;
+}
+.link-h:hover, .link-h:focus{
+  color: #ffac00;
+  text-decoration: none;
+}
+.follow{
+  padding: 10px 40px;margin-top: 35px;background-color: #333; color: white; width:65%;border-radius: 20px;
+}
+
+@media (min-width: 300px) and (max-width: 480px){
+  .follow{
+  padding: 10px 40px;margin-top: 35px;background-color: #333; color: white; width:100%;border-radius: 20px;
+}
+}
